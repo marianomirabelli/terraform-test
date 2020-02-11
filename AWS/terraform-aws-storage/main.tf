@@ -14,4 +14,14 @@ resource "aws_s3_bucket" "terraform_bucket"{
   tags = {
     Name = "terraform_bucket"
   }
+
+  #Create Bucket
+resource "aws_s3_bucket" "terraform_bucket"{
+  bucket = "${var.project_name2}-${random_id.bucket_id.dec}"
+  acl = "private"
+
+  force_destroy = true
+  tags = {
+    Name = "terraform_bucket"
+  }
 }

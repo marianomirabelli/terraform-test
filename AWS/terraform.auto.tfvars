@@ -1,5 +1,6 @@
 aws_region = "us-east-1"
 project_name = "pywren-protomol"
+project_name2 = "mr-storage"
 vpc_cidr     = "10.123.0.0/16"
 public_cidrs = [
   "10.123.1.0/24",
